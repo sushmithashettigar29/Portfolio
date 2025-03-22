@@ -9,7 +9,7 @@ html {
   font-family: "DM sans", sans-serif;
 }
 body {
-  background-color: #0c0c1d;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
   color: lightgray;
 }
 a {
@@ -18,5 +18,5 @@ a {
 }
 section {
   height: 100vh;
-  scroll-snap-align: center;
+  scroll-snap-align: center;min-height: 100vh; border: 2px solid red;
 }

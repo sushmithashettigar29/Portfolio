@@ -32,13 +32,12 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
 };
 
-  
 function Hero() {
   return (
     <div className="hero">
@@ -47,7 +46,7 @@ function Hero() {
           className="textContainer"
           variants={textVariants}
           initial="initial"
-          animate="animate"
+          whileInView="animate"
         >
           <motion.div className="mainText" variants={textVariants}>
             <motion.h2 variants={textVariants}>Hy! I Am</motion.h2>
@@ -73,7 +72,12 @@ function Hero() {
           />
         </motion.div>
       </div>
-      <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
+      <motion.div
+        className="slidingTextContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
         Full Stack Developer | Programmer | UI/UX Designer
       </motion.div>
 
