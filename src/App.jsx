@@ -12,16 +12,16 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      {/* <section id="About">About</section>
+      <section id="About">About</section>
       <section id="Projects">
         <Projects />
       </section>
       <section id="Services">
         <Services />
       </section>
-      <section id="Certificates">Certificates</section>
-      <section id="Resume">Resume</section>
-      <section id="Contact">
+      {/* <section id="Certificates">Certificates</section> */}
+      {/* <section id="Resume">Resume</section> */}
+      {/* <section id="Contact">
         <Contact />
       </section> */}
     </div>
