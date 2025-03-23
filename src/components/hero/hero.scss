@@ -1,3 +1,5 @@
+@use "../../app.scss" as *;
+
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -7,7 +9,10 @@
     margin-right: 150px;
     max-width: 1366px;
     height: 100%;
-    // margin: auto;
+    @include mobile {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
     .textContainer {
       height: 100%;
       width: 50%;
@@ -15,7 +20,13 @@
       flex-direction: column;
       justify-content: center;
       gap: 30px;
-
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        min-height: auto;
+        flex: 1;
+      }
       .mainText {
         display: flex;
         flex-direction: column;
@@ -24,19 +35,33 @@
         h2 {
           font-size: 50px;
           color: rebeccapurple;
+          @include mobile {
+            font-size: 20px;
+          }
         }
         h1 {
           font-size: 64px;
           font-weight: 900;
+          @include mobile {
+            font-size: 30px;
+          }
         }
         p {
           font-size: 25px;
           font-weight: 100;
+          @include mobile {
+            font-size: 16px;
+          }
         }
       }
       p {
         font-size: 25px;
         max-width: 700px;
+        @include mobile {
+          font-size: 16px;
+          max-width: 400px;
+          margin-bottom: 10px;
+        }
       }
       img {
         width: 50px;
@@ -44,6 +69,9 @@
       .buttons {
         display: flex;
         gap: 30px;
+        @include mobile {
+          gap: 20px;
+        }
         button {
           padding: 15px 20px;
           border: 2px solid white;
@@ -53,6 +81,12 @@
           background-color: transparent;
           color: white;
           cursor: pointer;
+          @include mobile {
+            padding: 8px 15px;
+            font-weight: 300;
+            border: 1px solid white;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -73,11 +107,22 @@
     position: absolute;
     top: 0;
     right: 0;
+    @include mobile {
+      height: 50%;
+      top: unset;
+      bottom: 0;
+    }
 
     img {
       margin-top: 40px;
       width: 400px;
       height: 470px;
+      @include mobile {
+        margin-top: 0px;
+        height: 115%;
+        width: 170%;
+        object-fit: cover;
+      }
     }
   }
 }
