@@ -38,7 +38,7 @@ function Hero() {
           className="textContainer"
           variants={textVariants}
           initial="hidden"
-          animate={isVisible ? "visible" : "hidden"} // Manually control animation
+          whileInView={isVisible ? "visible" : "hidden"} // Manually control animation
         >
           <motion.div className="mainText" variants={textVariants}>
             <motion.h2 variants={textVariants}>Hy! I Am</motion.h2>
