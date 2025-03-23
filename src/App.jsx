@@ -21,9 +21,9 @@ const App = () => {
       </section>
       {/* <section id="Certificates">Certificates</section> */}
       {/* <section id="Resume">Resume</section> */}
-      {/* <section id="Contact">
+      <section id="Contact">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 };
