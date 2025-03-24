@@ -1,0 +1,76 @@
+@use "../../app.scss" as *;
+
+.about {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  .aboutContent {
+    // background-color: #fff;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: orange;
+      font-size: 56px;
+    }
+    hr {
+      width: 250px;
+      border: none;
+      padding-bottom: 30px;
+      border-top: 10px solid white;
+    }
+    .aboutPara {
+      max-width: 1000px;
+      padding-bottom: 50px;
+    }
+    .education {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .item {
+        display: flex;
+        width: 100%;
+        .icon {
+          // background-color: #fff;
+          width: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .course {
+          // background-color: #b37373;
+          width: 75%;
+          padding: 10px;
+          h4 {
+            margin-bottom: 10px;
+          }
+        }
+        .yearMark {
+          // background-color: #fff;
+          width: 15%;
+          padding: 15px 0px 10px 0px;
+          h5{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .aboutImage {
+    // background-color: #7a2121;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 450px;
+    }
+  }
+}
