@@ -1,0 +1,36 @@
+.certificates {
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    color: #ffa500;
+    font-size: 56px;
+    padding-top: 50px;
+  }
+  hr {
+    width: 400px;
+    margin: 20px auto;
+    border: none;
+    border-top: 10px solid white;
+    padding-bottom: 30px;
+  }
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    .certi-card {
+      height: 200px;
+      width: 300px;
+      border: 1px solid gray;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
