@@ -101,7 +101,11 @@ function Resume() {
       <div className="resumeImage">
         <img src="/resumepage.png" alt="" />
         <motion.button
-          whileHover={{ backgroundColor: "white", color: "black" }}
+          whileHover={{ backgroundColor: "white", color: "black" }}               onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1AJXULRluOQJ0slTPWkQpWsJ0r2AdZFNZ/view?usp=sharing"
+            )
+          }
         >
           Download Resume
         </motion.button>
