@@ -1,23 +1,46 @@
 import "./about.scss";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const textVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, staggerChildren: 0.2 },
+  },
+};
 
 function About() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
     <div className="about">
-      <div className="aboutContent">
-        <h1>About Me</h1>
+      <motion.div
+        className="aboutContent"
+        variants={textVariants}
+        initial="hidden"
+        whileInView={isVisible ? "visible" : "hidden"}
+      >
+        <motion.h1 variants={textVariants}>About Me</motion.h1>
         <hr />
-        <p className="aboutPara">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          consequatur repellendus, totam quo enim quibusdam obcaecati,
-          necessitatibus magnam maiores temporibus possimus nulla velit eos
-          quasi repellat ipsam blanditiis esse ex?
-        </p>
+        <motion.p className="aboutPara" variants={textVariants}>
+          Motivated Computer Science and Engineering student with strong web
+          development, problem-solving, and teamwork skills. Passionate about
+          building impactful applications and collaborating on innovative
+          solutions. Experienced in full-stack development with ReactJS,
+          Node.js, and MongoDB. Eager to contribute to high-impact projects and
+          continue learning through hands-on challenges.
+        </motion.p>
 
         <div className="education">
           <motion.div
             className="item"
             whileHover={{ backgroundColor: "#603914" }}
+            variants={textVariants}
           >
             <div className="icon">
               <img src="/icon-edu.png" alt="" />
@@ -38,6 +61,7 @@ function About() {
           <motion.div
             className="item"
             whileHover={{ backgroundColor: "#603914" }}
+            variants={textVariants}
           >
             <div className="icon">
               <img src="/icon-edu.png" alt="" />
@@ -56,6 +80,7 @@ function About() {
           <motion.div
             className="item"
             whileHover={{ backgroundColor: "#603914" }}
+            variants={textVariants}
           >
             <div className="icon">
               <img src="/icon-edu.png" alt="" />
@@ -72,7 +97,7 @@ function About() {
             </div>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
       <div className="aboutImage">
         <img src="/about.png" alt="" />
       </div>

@@ -54,8 +54,27 @@ function Hero() {
           </motion.p>
 
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>Resume</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button
+              variants={textVariants}
+              className="resumebtn"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1AJXULRluOQJ0slTPWkQpWsJ0r2AdZFNZ/view?usp=sharing"
+                )
+              }
+            >
+              Resume
+            </motion.button>
+            <motion.button
+              variants={textVariants}
+              onClick={() =>
+                document
+                  .getElementById("Contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Contact Me
+            </motion.button>
           </motion.div>
 
           <motion.img

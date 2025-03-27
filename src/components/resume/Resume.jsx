@@ -1,57 +1,78 @@
 import "./resume.scss";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const textVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, staggerChildren: 0.2 },
+  },
+};
 
 function Resume() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
   return (
     <div className="resume">
-      <div className="resumeContent">
-        <h1>Technologies I Work With</h1>
+      <motion.div
+        className="resumeContent"
+        variants={textVariants}
+        initial="hidden"
+        whileInView={isVisible ? "visible" : "hidden"}
+      >
+        <motion.h1 variants={textVariants}>Technologies I Work With</motion.h1>
         <hr className="tech-hr" />
-        <div className="techContainer">
-          <div className="box">
+        <motion.div className="techContainer" variants={textVariants}>
+          <motion.div className="box" variants={textVariants}>
             <img src="/html.png" alt="" />
             <h6>HTML</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/css.png" alt="" />
             <h6>CSS</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/js.png" alt="" />
             <h6>JS</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/reactjs.png" alt="" />
             <h6>ReactJs</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/mongo.png" alt="" />
             <h6>MongoDB</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/nodejs.png" alt="" />
             <h6>NodeJs</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/express.png" alt="" />
             <h6>Express</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/angular.png" alt="" />
             <h6>Angular</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/java.png" alt="" />
             <h6>Java</h6>
-          </div>
-          <div className="box">
+          </motion.div>
+          <motion.div className="box" variants={textVariants}>
             <img src="/figma.png" alt="" />
             <h6>Figma</h6>
-          </div>
-        </div>
-        <h1>Experience</h1>
+          </motion.div>
+        </motion.div>
+        <motion.h1 variants={textVariants}>Experience</motion.h1>
         <hr className="exp-hr" />
         <div className="expContainer">
-          <div className="expbox">
+          <motion.div className="expbox" variants={textVariants}>
             <div className="icon">
               <img src="/job.png" alt="" />
             </div>
@@ -74,12 +95,16 @@ function Resume() {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       <div className="resumeImage">
         <img src="/resumepage.png" alt="" />
-        <button>Download Resume</button>
+        <motion.button
+          whileHover={{ backgroundColor: "white", color: "black" }}
+        >
+          Download Resume
+        </motion.button>
       </div>
     </div>
   );

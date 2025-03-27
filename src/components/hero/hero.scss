@@ -72,15 +72,22 @@
         @include mobile {
           gap: 20px;
         }
+        .resumebtn {
+          border: 2px solid orange;
+          background-color: transparent;
+          color: orange;
+        }
         button {
           padding: 15px 20px;
-          border: 2px solid white;
+          // border: 1px solid white;
           font-size: 18px;
           font-weight: 600;
           border-radius: 10px;
           background-color: transparent;
           color: white;
           cursor: pointer;
+          background-color: orange;
+
           @include mobile {
             padding: 8px 15px;
             font-weight: 300;
