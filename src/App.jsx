@@ -5,6 +5,7 @@ import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
+import Resume from "./components/resume/Resume";
 import Services from "./components/services/Services";
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
       <section id="Certificates">
         <Certificates />
       </section>
-      {/* <section id="Resume">Resume</section> */}
+      <section id="Resume">
+        <Resume />
+      </section>
       <section id="Contact">
         <Contact />
       </section>

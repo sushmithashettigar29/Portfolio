@@ -15,33 +15,56 @@ function About() {
         </p>
 
         <div className="education">
-          <motion.div className="item" whileHover={{backgroundColor:"#603914"}}>
-            <div className="icon"><img src="/icon-edu.png" alt="" /></div>
+          <motion.div
+            className="item"
+            whileHover={{ backgroundColor: "#603914" }}
+          >
+            <div className="icon">
+              <img src="/icon-edu.png" alt="" />
+            </div>
             <div className="course">
-              <h4 className="stream">Bachelor's of Engineering - Computer Science & Engineering</h4>
-              <p className="college">Mangalore Institute of Technology & Engineering, Moodbidri </p>
+              <h4 className="stream">
+                Bachelor's of Engineering - Computer Science & Engineering
+              </h4>
+              <p className="college">
+                Mangalore Institute of Technology & Engineering, Moodbidri{" "}
+              </p>
             </div>
             <div className="yearMark">
               <h5>2022 - Present</h5>
               <h4>8.7 CGPA</h4>
             </div>
           </motion.div>
-          <motion.div className="item" whileHover={{backgroundColor:"#603914"}}>
-            <div className="icon"><img src="/icon-edu.png" alt="" /></div>
+          <motion.div
+            className="item"
+            whileHover={{ backgroundColor: "#603914" }}
+          >
+            <div className="icon">
+              <img src="/icon-edu.png" alt="" />
+            </div>
             <div className="course">
               <h4 className="stream">Senior Secondary (12th)</h4>
-              <p className="college">Government Pre University College Bailur</p>
+              <p className="college">
+                Government Pre University College Bailur
+              </p>
             </div>
             <div className="yearMark">
               <h5>2021 - 2022</h5>
               <h4>95.33%</h4>
             </div>
           </motion.div>
-          <motion.div className="item" whileHover={{backgroundColor:"#603914"}}>
-            <div className="icon"><img src="/icon-edu.png" alt="" /></div>
+          <motion.div
+            className="item"
+            whileHover={{ backgroundColor: "#603914" }}
+          >
+            <div className="icon">
+              <img src="/icon-edu.png" alt="" />
+            </div>
             <div className="course">
               <h4 className="stream">Secondary School (SSLC)</h4>
-              <p className="college">Government Pre University College Bailur</p>
+              <p className="college">
+                Government Pre University College Bailur
+              </p>
             </div>
             <div className="yearMark">
               <h5>2019 - 2020</h5>

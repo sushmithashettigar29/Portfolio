@@ -28,7 +28,7 @@ function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true); // Manually trigger animation
+    setIsVisible(true);
   }, []);
 
   return (

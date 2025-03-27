@@ -9,7 +9,6 @@ const textVariants = {
     transition: { duration: 1, staggerChildren: 0.2 },
   },
 };
-
 function Services() {
   // const isInView = useInView(ref, { margin: "-100px" });
   return (

@@ -1,13 +1,21 @@
+@use "../../app.scss" as *;
+
 .certificates {
   margin-left: 150px;
   margin-right: 150px;
   height: 100%;
-
+  @include mobile {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   h1 {
     text-align: center;
     color: #ffa500;
     font-size: 56px;
     padding-top: 50px;
+    @include mobile {
+      font-size: 30px;
+    }
   }
   hr {
     width: 400px;
@@ -15,6 +23,12 @@
     border: none;
     border-top: 10px solid white;
     padding-bottom: 30px;
+    @include mobile {
+      border-top: 5px solid white;
+      width: 400px;
+      padding-bottom: 25px;
+      margin: 10px auto;
+    }
   }
   .card-container {
     width: 100%;
@@ -22,14 +36,27 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 10px;
+    }
     .certi-card {
       height: 200px;
       width: 300px;
       border: 1px solid gray;
+      @include mobile {
+        height: 100%;
+        width: 100%;
+      }
       img {
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
+        @include mobile {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
