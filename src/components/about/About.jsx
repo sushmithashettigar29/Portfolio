@@ -29,9 +29,7 @@ function About() {
         <hr />
         <motion.p className="aboutPara" variants={textVariants}>
           Motivated Computer Science and Engineering student with strong web
-          development, problem-solving, and teamwork skills. Passionate about
-          building impactful applications and collaborating on innovative
-          solutions. Experienced in full-stack development with ReactJS,
+          development, problem-solving, and teamwork skills. Experienced in full-stack development with ReactJS,
           Node.js, and MongoDB. Eager to contribute to high-impact projects and
           continue learning through hands-on challenges.
         </motion.p>

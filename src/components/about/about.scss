@@ -11,12 +11,18 @@
     margin-left: 40px;
     margin-right: 40px;
   }
+  @include tablet {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   .aboutContent {
-    // background-color: #fff;
     width: 60%;
     display: flex;
     flex-direction: column;
     @include mobile {
+      width: 100%;
+    }
+    @include tablet {
       width: 100%;
     }
     h1 {
@@ -24,6 +30,10 @@
       font-size: 56px;
       @include mobile {
         font-size: 30px;
+        text-align: center;
+      }
+      @include tablet {
+        font-size: 56px;
         text-align: center;
       }
     }
@@ -34,9 +44,12 @@
       border-top: 10px solid white;
       @include mobile {
         border-top: 5px solid white;
-        width: 400px;
+        width: 100%;
         padding-bottom: 5px;
         margin: 10px auto;
+      }
+      @include tablet {
+        width: 100%;
       }
     }
     .aboutPara {
@@ -62,7 +75,6 @@
           gap: 10px;
         }
         .icon {
-          // background-color: #fff;
           width: 10%;
           display: flex;
           justify-content: center;
@@ -76,7 +88,6 @@
           }
         }
         .course {
-          // background-color: #b37373;
           width: 75%;
           padding: 10px;
           @include mobile {
@@ -88,7 +99,6 @@
           }
         }
         .yearMark {
-          // background-color: #fff;
           width: 15%;
           padding: 15px 0px 10px 0px;
           color: orange;
@@ -116,12 +126,14 @@
     }
   }
   .aboutImage {
-    // background-color: #7a2121;
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     @include mobile {
+      display: none;
+    }
+    @include tablet {
       display: none;
     }
     img {

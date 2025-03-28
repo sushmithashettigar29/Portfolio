@@ -8,6 +8,10 @@
     margin-left: 20px;
     margin-right: 40px;
   }
+  @include tablet{
+    margin-left: 100px;
+    margin-right: 60px;
+  }
   .wrapper {
     max-width: 1366px;
     margin: auto;

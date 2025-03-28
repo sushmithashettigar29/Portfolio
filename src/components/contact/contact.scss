@@ -15,6 +15,12 @@
     gap: 40px;
     margin-top: 30px;
   }
+  @include tablet {
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 40px;
+    margin-top: 30px;
+  }
   .textContainer {
     flex: 1;
     display: flex;
@@ -31,6 +37,9 @@
       @include mobile {
         font-size: 30px;
         text-align: center;
+      }
+      @include tablet {
+        font-size: 60px;
       }
     }
     h2 {
@@ -59,6 +68,10 @@
       margin: auto;
       z-index: -1;
       @include mobile {
+        width: 100%;
+        display: flex;
+      }
+      @include tablet {
         width: 100%;
         display: flex;
       }
