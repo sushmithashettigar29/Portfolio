@@ -51,7 +51,14 @@ function Services() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam hic
             maxime commodi mollitia. Dolore temporibus atque non ipsa maiores!{" "}
           </p>
-          <motion.button whileHover={{ width: 250 }}>Order Now</motion.button>
+          <motion.button
+            whileHover={{ width: 250 }}
+            onClick={() =>
+              (window.location.href = "mailto:sushmithashettigar5@gmail.com")
+            }
+          >
+            Order Now
+          </motion.button>
         </motion.div>
         <motion.div
           className="box"
@@ -62,7 +69,14 @@ function Services() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam hic
             maxime commodi mollitia. Dolore temporibus atque non ipsa maiores!{" "}
           </p>
-          <motion.button whileHover={{ width: 250 }}>Order Now</motion.button>
+          <motion.button
+            whileHover={{ width: 250 }}
+            onClick={() =>
+              (window.location.href = "mailto:sushmithashettigar5@gmail.com")
+            }
+          >
+            Order Now
+          </motion.button>
         </motion.div>
         <motion.div
           className="box"
@@ -73,7 +87,14 @@ function Services() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam hic
             maxime commodi mollitia. Dolore temporibus atque non ipsa maiores!{" "}
           </p>
-          <motion.button whileHover={{ width: 250 }}>Order Now</motion.button>
+          <motion.button
+            whileHover={{ width: 250 }}
+            onClick={() =>
+              (window.location.href = "mailto:sushmithashettigar5@gmail.com")
+            }
+          >
+            Order Now
+          </motion.button>
         </motion.div>
       </motion.div>
     </motion.div>

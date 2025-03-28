@@ -48,25 +48,80 @@ function Projects() {
           className="pro-box"
           whileHover={{ backgroundColor: "orange" }}
         >
-          <img src="/devconnect.png" alt="" />
+          <img src="/urlshort.png" alt="" />
           <div className="contents">
-            <h3>AI-Powered Resume Builder</h3>
+            <h3>URL Shortener</h3>
             <p>
-              Please add your content here. Keep it short and simple. And smile
-              :)
+              Users get a shorter version, copy the shortened link, and track
+              how many times it has been clicked.
             </p>
             <hr width={300} />
             <p>
               <b>Technology Used</b>
             </p>
             <div className="tags">
-              <div className="tag">ReactJs</div>
-              <div className="tag">NLP</div>
               <div className="tag">MERN</div>
+              <div className="tag">Tailwind</div>
+              <div className="tag">nonoid</div>
             </div>
             <div className="buttons">
-              <button>Live Demo</button>
-              <button>Source Code</button>
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/URL-Shortner"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/URL-Shortner"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </button>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div
+          variants={textVariants}
+          className="pro-box"
+          whileHover={{ backgroundColor: "orange" }}
+        >
+          <img src="/bidnow.png" alt="" />
+          <div className="contents">
+            <h3>BidNow</h3>
+            <p>
+              Enabled features like real-time bidding and admin panel
+              management, optimizing the bidding process.
+            </p>
+            <hr width={300} />
+            <p>
+              <b>Technology Used</b>
+            </p>
+            <div className="tags">
+              <div className="tag">Angular</div>
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+            </div>
+            <div className="buttons">
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/BidNow"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/BidNow"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </button>
             </div>
           </div>
         </motion.div>
@@ -77,50 +132,36 @@ function Projects() {
         >
           <img src="/devconnect.png" alt="" />
           <div className="contents">
-            <h3>AI-Powered Resume Builder</h3>
+            <h3>DevConnect</h3>
             <p>
-              Please add your content here. Keep it short and simple. And smile
-              :)
+              DevConnect is a platform designed for developers to connect, share
+              knowledge, and collaborate.
             </p>
             <hr width={300} />
             <p>
               <b>Technology Used</b>
             </p>
             <div className="tags">
-              <div className="tag">ReactJs</div>
-              <div className="tag">NLP</div>
               <div className="tag">MERN</div>
+              <div className="tag">MUI</div>
             </div>
             <div className="buttons">
-              <button>Live Demo</button>
-              <button>Source Code</button>
-            </div>
-          </div>
-        </motion.div>
-        <motion.div
-          variants={textVariants}
-          className="pro-box"
-          whileHover={{ backgroundColor: "orange" }}
-        >
-          <img src="/devconnect.png" alt="" />
-          <div className="contents">
-            <h3>AI-Powered Resume Builder</h3>
-            <p>
-              Please add your content here. Keep it short and simple. And smile
-              :)
-            </p>
-            <hr width={300} />
-            <p>
-              <b>Technology Used</b>
-            </p>
-            <div className="tags">
-              <div className="tag">ReactJs</div>
-              <div className="tag">NLP</div>
-              <div className="tag">MERN</div>
-            </div>
-            <div className="buttons">
-              <button>Live Demo</button>
-              <button>Source Code</button>
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/DevConnect"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/sushmithashettigar29/DevConnect"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </button>
             </div>
           </div>
         </motion.div>

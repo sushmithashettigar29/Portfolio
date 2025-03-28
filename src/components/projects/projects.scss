@@ -55,7 +55,7 @@
     @include tablet {
       flex-direction: column;
       justify-content: center;
-      gap: 10px;
+      // gap: 10px;
     }
     .pro-box {
       border: 0.5px solid rgb(85, 84, 84);
@@ -71,8 +71,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 200px;
-        padding: 18px 10px;
+        height: 180px;
+        padding: 10px 10px;
         width: 100%;
         gap: 10px;
         height: 100%;
