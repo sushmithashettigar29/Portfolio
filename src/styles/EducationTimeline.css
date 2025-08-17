@@ -1,0 +1,84 @@
+/* EducationTimeline.css */
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #d93993;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 80px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 42px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #d93993;
+  border: 3px solid #f4e9f5;
+  box-shadow: 0px 3px 15px #d93993;
+}
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px 20px 1px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-degree {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 18px;
+}
+.timeline-marks {
+  margin: 0 0 15px 0;
+  font-size: 15px;
+  color: #d93993;
+}
+.timeline-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    padding-left: 60px;
+  }
+
+  .timeline-dot {
+    left: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-meta {
+    flex-direction: column;
+  }
+
+  .timeline-period {
+    margin-top: 5px;
+  }
+}

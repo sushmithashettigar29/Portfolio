@@ -1,0 +1,150 @@
+.banner {
+  padding: 100px 0 0 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+}
+
+.banner-content {
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  /* color: #fff; */
+  color: #000;
+}
+
+.banner p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner button {
+  /* color: #fff; */
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  background: transparent;
+  border: 3px solid #d93993;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.banner button:hover {
+  background: #d93993;
+  transform: translateY(-3px);
+}
+
+.banner button svg {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.banner button:hover svg {
+  margin-left: 15px;
+}
+
+.banner-img-container {
+  text-align: center;
+  position: relative;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  animation: updown 3s linear infinite;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid rgba(0, 0, 0, 0.7);
+  padding-right: 5px;
+  color: #000;
+  font-weight: 700;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding: 150px 0 80px 0;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 120px 0 60px 0;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner button {
+    margin: 30px auto 0;
+  }
+
+  .banner-img {
+    max-width: 80%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
