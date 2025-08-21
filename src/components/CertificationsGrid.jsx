@@ -45,6 +45,14 @@ const CertificationsGrid = () => {
       skills: ["Artificial Intelligence", "ChatGPT"],
       link: "https://drive.google.com/file/d/1FhmBmQ-hA_Gan-ymb2zwX3dubfe0gTTW/view?usp=drive_link",
     },
+    {
+      id: 6,
+      title: "Python Basics Course",
+      issuer: "Udemy",
+      date: "August 2025",
+      skills: ["Python"],
+      link: "https://drive.google.com/file/d/1y76lpFOiC2clZJ4HAXNWBn33axpXYJJC/view?usp=sharing",
+    },
   ];
 
   return (

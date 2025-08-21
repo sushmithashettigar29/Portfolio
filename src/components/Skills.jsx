@@ -13,9 +13,21 @@ export const Skills = () => {
   };
 
   const skills = [
-    "HTML / CSS", "JavaScript", "Python", "React.js", "Bootstrap",
-    "Tailwind CSS", "Java", "AngularJS", "MongoDB", "NodeJS",
-    "Express", "Git & GitHub", "Figma (UI/UX)", "Problem Solving", "Time Management"
+    "HTML / CSS",
+    "JavaScript",
+    "Python",
+    "React.js",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Java",
+    "AngularJS",
+    "MongoDB",
+    "NodeJS",
+    "Express",
+    "Git & GitHub",
+    "Figma (UI/UX)",
+    "Problem Solving",
+    "Time Management",
   ];
 
   return (
@@ -30,10 +42,10 @@ export const Skills = () => {
                 <Carousel
                   responsive={responsive}
                   infinite={true}
-                  arrows={false}        
-                  showDots={false}    
+                  arrows={false}
+                  showDots={false}
                   autoPlay={true}
-                  autoPlaySpeed={3000}
+                  autoPlaySpeed={2000}
                   keyBoardControl={true}
                   transitionDuration={500}
                   containerClass="skill-slider-container"

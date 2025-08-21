@@ -15,14 +15,14 @@ const EducationTimeline = () => {
       degree: "Senior Secondary (12th) in PCMB",
       institution: "Govt PU College, Bailur",
       period: "2021 - 2022",
-      marks: "Percentage : 95.33%",
+      marks: "Percentage : 95.33",
     },
     {
       id: 3,
       degree: "Secondary School (SSLC)",
       institution: "Govt Junior College, Bailur",
       period: "2019 - 2020",
-      marks: "Percentage : 90.01%",
+      marks: "Percentage : 90.01",
     },
   ];
 

@@ -28,7 +28,7 @@ export const Projects = () => {
       techStack:
         "React | Axios | Tailwind CSS | Node.js | Express | OpenAI API",
       description:
-        "SummarizeIQ is an AI-powered text summarization app built using React (frontend) and Node.js + Express (backend). It uses OpenAI GPT-4o-mini to generate high-quality summaries of any text with options for short, medium, or detailed output.",
+        "SmartMark is a full-stack personal bookmark manager that allows users to save, view, search, and delete bookmarks through a simple web interface or browser extension. It includes a FastAPI backend, Streamlit frontend, and a Chrome extension for quick bookmarking.",
       githubLink: "https://github.com/sushmithashettigar29/SmartMark",
       image: smartMarkImg,
     },

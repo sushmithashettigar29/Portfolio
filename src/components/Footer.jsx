@@ -15,13 +15,25 @@ export const Footer = () => {
           </Col>
           <Col xs={12} md={6} className="footer-right">
             <div className="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/sushmithashettigar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={linkedin} alt="LinkedIn" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/sushmithashettigar29"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={github} alt="GitHub" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/sushmithas.______/#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={insta} alt="Instagram" />
               </a>
             </div>
